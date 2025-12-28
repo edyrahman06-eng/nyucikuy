@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  padding: 40px 0 20px;
+}
+
+h1 {
+  font-size: 2.4rem;
+  color: #2c3e50;
+}
+
+.subtitle {
+  color: #7f8c8d;
+  font-size: 1.1rem;
+  margin-top: 8px;
+}
+
+.hero {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  margin: 20px 0;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+  color: #2980b9;
+}
+
+.hero p {
+  margin-bottom: 16px;
+}
+
+.features,
+.testimonials,
+.promo,
+.order-form {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  margin: 20px 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+h2 {
+  font-size: 1.6rem;
+  margin-bottom: 16px;
+  color: #2c3e50;
+}
+
+ul {
+  padding-left: 20px;
+  margin: 12px 0;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+.promo {
+  background: #e8f4fc;
+  border-left: 4px solid #3498db;
+}
+
+.note {
+  margin-top: 12px;
+  font-style: italic;
+}
+
+.contact {
+  text-align: center;
+  font-weight: 500;
+}
+
+/* Form styling */
+.form-group {
+  margin-bottom: 16px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+button {
+  background: #27ae60;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: #219653;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  color: #7f8c8d;
+  font-size: 0.9rem;
+  border-top: 1px solid #eee;
+}

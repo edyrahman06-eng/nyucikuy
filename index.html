@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SepatuBersih – Cuci Sepatu Premium</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🥿 Nyucikuy</h1>
+      <div class="subtitle">Cuci Sepatu Premium – Kinclong, Aman, Cepat!</div>
+    </header>
+
+    <section class="hero">
+      <h2>Sepatu Kotor? Serahkan pada Kami!</h2>
+      <p>Kami hadir untuk merawat sepatu kesayanganmu dengan teknik pembersihan profesional yang aman untuk semua bahan — sneakers, kulit, kanvas, suede, dan sepatu olahraga.</p>
+      <p>✨ Hasil bersih maksimal<br>
+         ⏱️ Proses hanya 1–2 hari<br>
+         🧴 Produk ramah sepatu & lingkungan</p>
+    </section>
+
+    <section class="features">
+      <h2>Layanan Kami</h2>
+      <p><strong>1. Cuci Reguler</strong> – Rp25.000</p>
+      <ul>
+        <li>Pembersihan standar</li>
+        <li>Pengeringan sempurna</li>
+        <li>Aroma segar</li>
+      </ul>
+
+      <p><strong>2. Deep Clean + Anti Bau</strong> – Rp40.000</p>
+      <ul>
+        <li>Sikat detail hingga sela-sela</li>
+        <li>Treatment anti jamur & bau</li>
+        <li>Coating pelindung ringan</li>
+      </ul>
+
+      <p><strong>3. Premium Care</strong> – Rp60.000</p>
+      <ul>
+        <li>Deep clean + coating water-repellent</li>
+        <li>Pelindung sol & upper</li>
+        <li>Cocok untuk sneakers mahal</li>
+      </ul>
+
+      <p><strong>4. Custom Paint / Repaint</strong> – Mulai Rp75.000</p>
+      <ul>
+        <li>Ganti warna</li>
+        <li>Desain kustom</li>
+        <li>Garansi hasil rapi</li>
+      </ul>
+      <p><em>(Harga bisa menyesuaikan jenis & kondisi sepatu)</em></p>
+    </section>
+
+    <section class="features">
+      <h2>Kenapa Pilih SepatuBersih?</h2>
+      <ul>
+        <li>✅ Teknisi berpengalaman</li>
+        <li>✅ Tidak pakai mesin cuci — semua handwash</li>
+        <li>✅ Aman untuk sepatu limited edition</li>
+        <li>✅ Hasil dijamin memuaskan atau kami ulang!</li>
+      </ul>
+    </section>
+
+    <section class="testimonials">
+      <h2>Testimoni Pelanggan</h2>
+      <p><em>"Sepatu putih saya kuning & kusam... sekarang kayak baru lagi!"</em> – Dinda</p>
+      <p><em>"Pertama kali coba, langsung jadi langganan!"</em> – Raka</p>
+      <p class="note">*(Foto before-after bisa ditambahkan nanti)*</p>
+    </section>
+
+    <section class="promo">
+      <h2>Promo Spesial!</h2>
+      <p>🎉 <strong>Diskon 15%</strong> untuk pemesanan pertama</p>
+      <p>🎁 <strong>Gratis coating anti air</strong> untuk 20 pelanggan minggu ini!</p>
+    </section>
+
+    <!-- Form Pemesanan -->
+    <section class="order-form">
+      <h2>Pesan Sekarang</h2>
+      <p>Isi form di bawah, lalu klik tombol untuk mengirim pesanan ke WhatsApp kami.</p>
+
+      <div class="form-group">
+        <label for="nama">Nama Lengkap</label>
+        <input type="text" id="nama" placeholder="Contoh: Budi Santoso" required>
+      </div>
+
+      <div class="form-group">
+        <label for="sepatu">Jenis Sepatu</label>
+        <input type="text" id="sepatu" placeholder="Contoh: Nike Air Force 1 putih" required>
+      </div>
+
+      <div class="form-group">
+        <label for="layanan">Layanan</label>
+        <select id="layanan" required>
+          <option value="">-- Pilih Layanan --</option>
+          <option value="Cuci Reguler (Rp25.000)">Cuci Reguler (Rp25.000)</option>
+          <option value="Deep Clean + Anti Bau (Rp40.000)">Deep Clean + Anti Bau (Rp40.000)</option>
+          <option value="Premium Care (Rp60.000)">Premium Care (Rp60.000)</option>
+          <option value="Custom Paint / Repaint (Mulai Rp75.000)">Custom Paint / Repaint</option>
+        </select>
+      </div>
+
+      <button onclick="kirimKeWA()">Kirim Pesanan ke WhatsApp</button>
+    </section>
+
+    <section class="contact">
+      <h2>Temukan Kami</h2>
+      <p>📍 <strong>Alamat</strong>: Jl. Bersih No. 10, Kota Bandung<br>
+         📱 <strong>Instagram</strong>: @sepatubersih.id<br>
+         🕒 <strong>Jam Operasional</strong>: Senin–Minggu, 08.00–18.00</p>
+      <p><em>Boleh datang langsung atau pesan via WhatsApp/DM!</em></p>
+    </section>
+
+    <footer>
+      &copy; 2025 SepatuBersih. Semua hak dilindungi.
+    </footer>
+  </div>
+
+  <script>
+    function kirimKeWA() {
+      const nama = document.getElementById('nama').value;
+      const sepatu = document.getElementById('sepatu').value;
+      const layanan = document.getElementById('layanan').value;
+
+      if (!nama || !sepatu || !layanan) {
+        alert('Mohon lengkapi semua data!');
+        return;
+      }
+
+      // 🔴 GANTI DENGAN NOMOR WA KAMU (format internasional, tanpa + atau 0)
+      const nomorWA = '6281234567890'; // ← GANTI DI SINI!
+
+      const pesan = `Halo SepatuBersih!%0ASaya ingin memesan layanan cuci sepatu.%0A%0ANama: ${nama}%0AJenis Sepatu: ${sepatu}%0ALayanan: ${layanan}`;
+      const urlWA = `https://wa.me/${nomorWA}?text=${pesan}`;
+
+      window.open(urlWA, '_blank');
+    }
+  </script>
+</body>
+</html>
